@@ -1,0 +1,17 @@
+from sys import stdin, stdout
+ 
+def main ():
+    read = stdin.readline
+    write = stdout.write
+    t = int (read ())
+    for t_ in range (t):
+        n = int (read ())
+        if n < 30:
+            if n != 21: write (“-1\n”)
+            else: write (“1\n”)
+            continue
+        md = n % 14
+        if md > 1 and md < 13: write (str (n // 14) + ‘\n’)
+        else: write (“-1\n”)
+ 
+if __name__ == “__main__”: main ()
