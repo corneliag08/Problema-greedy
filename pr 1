@@ -1,0 +1,15 @@
+Go to a shop. Buy something. Say you have to pay 71 dollars for it. You give a cashier a 100. You want your change back. You get your change one note at a time, but never exceeding the change, i.e., 29 dollars. If you can take just one note, what is the greediest way to do it? Take the note. Start again. We get the following:
+
+Step1: Well you takes the biggest note that is at most 29, so you take 20 dollar note.
+Step2: You need 9 more dollars. You take the biggest note that is not more than 9, so you take 5 dollar note.
+Step3: You take the biggest note less than 4. So you take 2 dollar note.
+Step4: You take the biggest note that is not more than 2. So you take 2 dollar note.
+See what we did. At every step we took the best possible choice that does not violate the solution. This is a greedy algorithm. Greedy since at every step you take the best at the current moment; without thinking what will happen as a consequence. Will this always give you back your change with the minimum number of notes? Well yes, but only because we made it that way, that is since we use 1,2,5,10 system for notes.
+
+But suppose that all possible notes are 25, 14 and 1. Then if we take our change greedily we take 25, 1, 1, 1, 1. In total 5 notes. We could use less notes if we would take 14,14,1. We were greedy and optimized only depending on the current status. Hence greedy is not always optimal.
+
+The above is known as change-making problem. Check wiki.
+
+Ex: Prove that greedy works for change-making problem with standard notes (1,2,5,…). Try to extend this and characterize when it works and it does not.
+
+Remark: the above is true in general. Greedy is an algorithm taking the best possible at the current stage without violating constraints. Often it does not produce optimal solution, but it always produces a feasible solution by definition. It is still used quite often in many areas because of its simplicity and speed.
