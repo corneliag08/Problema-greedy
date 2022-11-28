@@ -15,3 +15,28 @@ def main ():
         else: write (“-1\n”)
  
 if __name__ == “__main__”: main ()
+
+
+
+
+
+
+
+Problemă
+Bob este un mare fan al zarurilor cubice. El construiește un 
+turn de zaruri stivuind zarurile unul peste altul. Un zar cubic și un turn de zaruri sunt afișate după cum urmează:
+
+                                              
+Lee a primit un număr întreg. El și-a propus să construiască un turn cu o înălțime minimă, cu suma punctelor 
+de pe toate suprafețele sale exterioare egală cu numărul furnizat (suprafața exterioară: suprafața laterală, fețele de sus și de jos).
+
+A trebuit să-l ajuți pe Lee să calculeze numărul minim de zaruri necesare pentru a construi turnul.
+
+ formatul de intrare
+
+Prima linie conține un număr întreg care denotă numărul de cazuri de testare.
+Prima linie a fiecărui caz de testare conține un număr întreg.
+Format de iesire
+
+Pentru fiecare caz de testare, tipăriți singurul număr întreg care indică numărul 
+de zaruri din turnul necesar într-o nouă linie. Dacă nu există un astfel de turn, imprimați .
